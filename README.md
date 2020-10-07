@@ -47,8 +47,10 @@ For reference check out : www.youtube.com/watch?v=c6b6B9oN4Vg
                 <div class="card">
                     <img class="card-img-top" src="[Image address]" alt="">
                     <div class="card-body">
-                        <h5 class="card-title">[Name of Programming Language]</h5>
+                        <h5 class="card-title text-center">[Name of Programming Language]</h5>
+                        <div class="col text-center">
                         <a href="[Add the link to your Github Profile]" class="btn btn-outline-danger btn-sm">Contributed by - [Add your Github Username/profile name]</a>
+                        </div>
                     </div>
                 </div>
             </div>
