@@ -37,14 +37,15 @@
                                placeholder="Ex: JavaScript"
                                aria-label="language"
                                name="search"
-                               aria-describedby="basic-addon1" />
+                               aria-describedby="basic-addon1"
+                               onkeyup="search(this)"/>
                     </div>
                 </div>
             </div>
 
 
             <div id="cards">
-                <div class="row">
+                <div class="row list">
                   
                     <div class="col-lg-4 mb-4" data-lang="javascript">
                         <div class="card">
@@ -115,13 +116,13 @@
 
                         </div>
                     </div>
-                  
+
                   <div class="col-lg-4 mb-4">
                 <div class="card">
                     <img class="card-img-top" src="./images/cpp.png" alt="">
                     <div class="card-body">
                         <h5 class="card-title ">C++</h5>
-                        
+
                         <a href="https://github.com/SidBthegr8" class="btn btn-outline-danger btn-sm">Contributed by - Sidharth Bankupalle</a>
                 </div>
                   </div>
@@ -132,20 +133,15 @@
         </div>
     </main>
 
+    <script src="//cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <script>
-        const searchEl = document.getElementById("search");
-        const cardsEl = document.getElementById("cards");
-        console.log(cardsEl);
-        // console.log(searchEl);
-
-        searchEl.addEventListener("change", function Search(e) {
-            console.log(e.target.value);
-            console.log("clicked");
-
-            const el = document.querySelector(`[data-lang="${e.target.value}"]`);
-            console.log(el);
-            // cardsEl.appendChild(el);
+        let list = new List('cards', {
+            valueNames: ['card-title text-center'],
         });
+
+        function search(e) {
+            list.search(e.value)
+        }
     </script>
 </body>
 </html>
