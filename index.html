@@ -1,68 +1,128 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- CSS only -->
-    <link rel="stylesheet"
-          href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
-          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
-          crossorigin="anonymous" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+      integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z"
+      crossorigin="anonymous"
+    />
     <title>Hello World</title>
-</head>
-<body>
+  </head>
+  <body>
     <div class="container text-center">
-        <div class="row">
-            <div class="col">
-                <div class="display-1 uppercase">Hello World</div>
-                <p class="lead">
-                    Hello world programme in most of the programming language created so
-                    far
-                </p>
-            </div>
+      <div class="row">
+        <div class="col">
+          <div class="display-1 uppercase">Hello World</div>
+          <p class="lead">
+            Hello world programme in most of the programming language created so
+            far
+          </p>
         </div>
+      </div>
     </div>
 
     <main>
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="input-group mb-3">
-                        <div class="input-group-prepend">
-                            <span class="input-group-text" id="basic-addon1">Search By language</span>
-                        </div>
-                        <input id="search"
-                               type="text"
-                               class="form-control"
-                               placeholder="Ex: JavaScript"
-                               aria-label="language"
-                               name="search"
-                               aria-describedby="basic-addon1" />
-                    </div>
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <div class="input-group mb-3">
+              <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1"
+                  >Search By language</span
+                >
+              </div>
+              <input
+                id="search"
+                type="text"
+                class="form-control"
+                placeholder="Ex: JavaScript"
+                aria-label="language"
+                name="search"
+                aria-describedby="basic-addon1"
+                onkeyup="search(this)"
+              />
+            </div>
+          </div>
+        </div>
+
+        <div id="cards">
+          <div class="row list">
+            <div class="col-lg-4 mb-4" data-lang="javascript">
+              <div class="card">
+                <img
+                  class="card-img-top"
+                  src="./images/javascript.png"
+                  alt=""
+                />
+                <div class="card-body">
+                  <h5 class="card-title text-center">JavaScript</h5>
+
+                  <div class="col text-center">
+                    <a
+                      href="https://github.com/kmrakash"
+                      class="btn btn-outline-danger btn-sm"
+                      >Contributed by - kmrakash</a
+                    >
+                  </div>
                 </div>
+              </div>
             </div>
 
+            <!-- Write Your Code From Here , Please run once locally to know if everything is good -->
+            <div class="col-lg-4 mb-4" data-lang="C#">
+              <div class="card">
+                <img class="card-img-top" src="./images/C-hash.png" alt="C#" />
+                <div class="card-body">
+                  <h5 class="card-title text-center">C#</h5>
+                  <div class="col text-center">
+                    <a
+                      href="https://github.com/SidBthegr8"
+                      class="btn btn-outline-danger btn-sm"
+                      >Contributed by - Sidharth Bankupalle</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 mb-4" data-lang="Ruby">
+              <div class="card">
+                <img class="card-img-top" src="./images/ruby.png" alt="Ruby" />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Ruby</h5>
+                  <div class="col text-center">
+                    <a
+                      href="https://github.com/kushaangowda"
+                      class="btn btn-outline-danger btn-sm"
+                      >Contributed by - Kushaan Gowda</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+         
+            <div class="col-lg-4 mb-4" data-lang="Dart">
+              <div class="card">
+                <img class="card-img-top" src="./images/dart.png" alt="Dart" />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Dart</h5>
+                  <div class="col text-center">
+                    <a
+                      href="https://github.com/ashutoshkrris"
+                      class="btn btn-outline-danger btn-sm"
+                      >Contributed by - Ashutosh Krishna</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+       
 
-            <div id="cards">
-                <div class="row">
-                  
-                    <div class="col-lg-4 mb-4" data-lang="javascript">
-                        <div class="card">
-                            <img class="card-img-top"
-                                 src="./images/javascript.png"
-                                 alt="" />
-                            <div class="card-body">
-                                <h5 class="card-title text-center">JavaScript</h5>
 
-                                <div class="col text-center">
-                                    <a href="https://github.com/kmrakash"
-                                       class="btn btn-outline-danger btn-sm">Contributed by - kmrakash</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
 
-                    <!-- Write Your Code From Here , Please run once locally to know if everything is good -->
 		<div class="col-lg-4 mb-4" data-lang="BASIC">
                         <div class="card">
                             <img class="card-img-top"
@@ -91,20 +151,7 @@
                             </div>
                         </div>
                     </div>
-		<div class="col-lg-4 mb-4" data-lang="C#">
-                        <div class="card">
-                            <img class="card-img-top"
-                                 src="./images/C-hash.png"
-                                 alt="C#" />
-                            <div class="card-body">
-                                <h5 class="card-title text-center">C#</h5>
-                                <div class="col text-center">
-                                    <a href="https://github.com/SidBthegr8"
-                                       class="btn btn-outline-danger btn-sm">Contributed by - Sidharth Bankupalle</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+	
                     <div class="col-lg-4 mb-4" data-lang="Python">
                         <div class="card">
                             <img class="card-img-top"
@@ -119,18 +166,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="col-lg-4 mb-4" data-lang="Dart">
-                        <div class="card">
-                            <img class="card-img-top" src="./images/dart.png" alt="Dart" />
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Dart</h5>
-                                <div class="col text-center">
-                                    <a href="https://github.com/ashutoshkrris"
-                                       class="btn btn-outline-danger btn-sm">Contributed by - Ashutosh Krishna</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                  
                     <div class="col-lg-4 mb-4" data-lang="Go">
                         <div class="card">
                             <img class="card-img-top" src="./images/go.png" alt="Go">
@@ -141,39 +177,64 @@
                                 </div>
                             </div>
 
-                        </div>
-                    </div>
-                  
-                  <div class="col-lg-4 mb-4">
-                <div class="card">
-                    <img class="card-img-top" src="./images/cpp.png" alt="">
-                    <div class="card-body">
-                        <h5 class="card-title ">C++</h5>
-                        
-                        <a href="https://github.com/SidBthegr8" class="btn btn-outline-danger btn-sm">Contributed by - Sidharth Bankupalle</a>
+            <div class="col-lg-4 mb-4" data-lang="C++">
+              <div class="card">
+                <img class="card-img-top" src="./images/cpp.png" alt="" />
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center">C++</h5>
+                  <a
+                    href="https://github.com/SidBthegr8"
+                    class="btn btn-outline-danger btn-sm"
+                    >Contributed by - Sidharth Bankupalle</a
+                  >
                 </div>
-                  </div>
-                    </div>
-                  
-                  
+              </div>
             </div>
+
+
+            <div class="col-lg-4 mb-4" data-lang="C">
+              <div class="card">
+                <img class="card-img-top" src="./images/c.png" alt="" />
+                <div class="card-body text-center">
+                  <h5 class="card-title text-center">C</h5>
+                  <a
+                    href="https://github.com/kushaangowda"
+                    class="btn btn-outline-danger btn-sm"
+                    >Contributed by - Kushaan Gowda</a
+                  >
+                </div>
+              </div>
+            </div>
+
+            <div class="col-lg-4 mb-4">
+              <div class="card">
+                <img class="card-img-top" src="./images/java.png" alt="" />
+                <div class="card-body">
+                  <h5 class="card-title text-center">Java</h5>
+                  <div class="col text-center">
+                    <a
+                      href="https://github.com/choijean"
+                      class="btn btn-outline-danger btn-sm"
+                      >Contributed by - Jean Choi</a
+                    >
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
     </main>
 
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.5.0/list.min.js"></script>
     <script>
-        const searchEl = document.getElementById("search");
-        const cardsEl = document.getElementById("cards");
-        console.log(cardsEl);
-        // console.log(searchEl);
+      let list = new List("cards", {
+        valueNames: ["card-title text-center"],
+      });
 
-        searchEl.addEventListener("change", function Search(e) {
-            console.log(e.target.value);
-            console.log("clicked");
-
-            const el = document.querySelector(`[data-lang="${e.target.value}"]`);
-            console.log(el);
-            // cardsEl.appendChild(el);
-        });
+      function search(e) {
+        list.search(e.value);
+      }
     </script>
-</body>
+  </body>
 </html>
