@@ -30,3 +30,12 @@ let list = new List('cards', options, data);
 function search(e) {
     list.search(e.value, ['lang-name'])
 }
+
+// If there's no results, show "No result found"
+list.on('searchComplete', function (e) {
+    if (e.matchingItems.length === 0) {
+        document.getElementsByClassName('no-results')[0].style.display = "block";
+    } else {
+        document.getElementsByClassName('no-results')[0].style.display = "none";
+    }
+})
