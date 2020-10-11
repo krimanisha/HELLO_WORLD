@@ -151,5 +151,14 @@ let data = [
         'contributor': "Contributed by - Alberto Jauregui",
         'contributor-link': "https://www.github.com/albertojauregui",
     },
+    {
+        'lang': "XQuery",
+        'lang-name': "XQuery",
+        'lang-image': "./images/XQuery.png",
+        'lang-image-attr': "XQuery",
+        'contributor': "Contributed by - Aaditya Raj",
+        'contributor-link': "https://www.github.com/Aaditya-Raj7",
+    },
+
 
 ]
