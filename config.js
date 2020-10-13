@@ -159,6 +159,13 @@ let data = [
         'contributor': "Contributed by - Aaditya Raj",
         'contributor-link': "https://www.github.com/Aaditya-Raj7",
     },
-
+    {
+        'lang': “Batch File“,
+        'lang-name': “Batch File“,
+        'lang-image': "./images/Batch.png",
+        'lang-image-attr': “Batch File“,
+        'contributor': "Contributed by - Monica Munoz”,
+        'contributor-link': "https://www.github.com/sarcastic22101”,
+    },
 
 ]
